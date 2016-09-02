@@ -1,0 +1,40 @@
+
+.recipe-shortcode {
+
+  .images {
+    margin-bottom: $base_spacing;
+
+    a {
+      border: 0;
+      text-decoration: none;
+      display: inline-block;
+      outline: 0;
+    }
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  &.full-recipe {
+
+    .entry-summary {
+      padding: 0;
+    }
+
+    .recipe-description {
+      @include section-bottom();
+      padding: 0 0 $base_spacing;
+
+      > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .recipe-meta {
+      @include section-bottom();
+      padding: 0 0 $base_spacing;
+    }
+  }
+
+}

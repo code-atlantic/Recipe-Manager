@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Recipe Actions Bar
+   ========================================================================== */
+
+.recipe-actions {
+   @include section-bottom();
+   border-top: 1px solid $accent_color;
+   padding: $base_spacing / 2 0;
+
+
+   > * {
+      display: inline-block;
+      margin-left: $base_spacing;
+
+      &:first-child {
+         margin-left: 0;
+      }
+   }
+
+}

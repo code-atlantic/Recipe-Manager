@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Recipe Ingredients
+   ========================================================================== */
+
+.recipe-ingredients {
+  margin: 0 0 $base_spacing;
+  padding: 0;
+
+  list-style-type: disc;
+  list-style-position: inside; //this is important addition
+
+  @media screen and (min-width: 1281px) {
+    columns: 2;
+  }
+
+  .recipe-ingredient {
+    margin-bottom: $base_spacing / 4;
+  }
+
+  .recipe-ingredient-note {
+    margin-left: $base_spacing / 4;
+
+    &::before {
+      content: "(";
+    }
+
+    &::after {
+      content: ")";
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Recipe Times
+   ========================================================================== */
+
+.recipe-times {
+  @include section-bottom();
+  padding: $base_spacing/2 0;
+  display: block;
+  line-height: 1.25;
+
+  li {
+    display: inline-block;
+    width: 30%;
+    margin-right: 4%;
+    border: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    strong {
+      display: block;
+    }
+  }
+}

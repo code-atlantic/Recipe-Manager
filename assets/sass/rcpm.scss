@@ -1,0 +1,22 @@
+//@import "partials/times";
+//@import "partials/meta";
+//@import "partials/shortcode";
+//@import "partials/current";
+
+$base_spacing: 16px;
+$accent_color: #dddddd;
+
+@import "partials/mixins";
+
+@import "partials/recipe/general";
+@import "partials/recipe/actions";
+@import "partials/recipe/ingredients";
+@import "partials/recipe/meta";
+@import "partials/recipe/phases";
+@import "partials/recipe/steps";
+@import "partials/recipe/times";
+
+@import "partials/recipe-list";
+@import "partials/single-recipe";
+@import "partials/shortcode-recipe";
+

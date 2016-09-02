@@ -1,0 +1,1000 @@
+# Copyright (C) 2016 recipe-manager
+# This file is distributed under the same license as the recipe-manager package.
+msgid ""
+msgstr ""
+"Project-Id-Version: recipe-manager\n"
+"Report-Msgid-Bugs-To: https://wprecipemanager.com/support\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Language-Team: Recipe Manager for WP <support@wprecipemanager.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: classes/Activation.php:53
+msgid "Appetizer"
+msgstr ""
+
+#: classes/Activation.php:54
+msgid "Brunch"
+msgstr ""
+
+#: classes/Activation.php:55
+msgid "Breakfast"
+msgstr ""
+
+#: classes/Activation.php:56
+msgid "Lunch"
+msgstr ""
+
+#: classes/Activation.php:57
+msgid "Dinner"
+msgstr ""
+
+#: classes/Activation.php:58
+msgid "Dessert"
+msgstr ""
+
+#: classes/Activation.php:59
+msgid "Beverage"
+msgstr ""
+
+#: classes/Admin/Assets.php:52, classes/Admin/Recipes/Templates.php:59
+msgid "Phase"
+msgstr ""
+
+#: classes/Admin/Assets.php:53
+msgid "Are you sure you want to delete this phase?"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:35
+msgid "Is Allergenic"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:36
+msgid "Is the ingredient an allergen?"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:41
+msgid "Allergen Warning Note"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:42
+msgid "This will be display on recipes that include this ingredient. Leave blank to use the default."
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:46
+msgid "Contains Dairy"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:47
+msgid "Does this contain lactose?"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:109, classes/Admin/Ingredients/Metaboxes.php:117, classes/Admin/Ingredients/Metaboxes.php:127
+msgid "Use file"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:110, classes/Admin/Ingredients/Metaboxes.php:117, classes/Admin/Ingredients/Metaboxes.php:128
+msgid "Upload"
+msgstr ""
+
+#: classes/Admin/Ingredients/Metaboxes.php:118
+msgid "Add file"
+msgstr ""
+
+#: classes/Admin/Pages.php:23, classes/Admin/Pages.php:24
+msgid "Settings"
+msgstr ""
+
+#: classes/Admin/Pages.php:31, classes/Admin/Pages.php:32
+msgid "Tools"
+msgstr ""
+
+#: classes/Admin/Pages.php:40, classes/Admin/Pages.php:41, includes/setting-functions.php:413
+msgid "Addons"
+msgstr ""
+
+#: classes/Admin/Pages.php:63
+msgid "__Recipe Manager Settings"
+msgstr ""
+
+#: classes/Admin/Pages.php:63
+msgid "Recipe Manager Settings"
+msgstr ""
+
+#: classes/Admin/Pages.php:107
+msgid "__Recipe Manager Tools"
+msgstr ""
+
+#: classes/Admin/Pages.php:107
+msgid "Recipe Manager Tools"
+msgstr ""
+
+#: classes/Admin/Pages.php:150
+msgid "Recipe Manager Addons"
+msgstr ""
+
+#: classes/Admin/Pages.php:250
+msgid "Learn More"
+msgstr ""
+
+#: classes/Admin/Recipes/Help.php:25
+msgid "For more information:"
+msgstr ""
+
+#: classes/Admin/Recipes/Help.php:25
+msgid "Visit the <a href=\"%s\">documentation</a> on the Recipe Manager website."
+msgstr ""
+
+#: classes/Admin/Recipes/Help.php:25
+msgid "<a href=\"%s\">Post an issue</a> on <a href=\"%s\">GitHub</a>. View <a href=\"%s\">extensions</a> or <a href=\"%s\">themes</a>."
+msgstr ""
+
+#: classes/Admin/Recipes/Help.php:29
+msgid "%s Settings"
+msgstr ""
+
+#: classes/Admin/Recipes/Help.php:30
+msgid "<strong>Phases</strong> - Define different parts of your recipe, such as Cake, Filling & Frosting."
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:45
+msgid "Prep Time"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:50
+msgid "Cook Time"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:55
+msgid "Total Time"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:59
+msgid "Enter the prep & cook times. HH:MM"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:63, includes/template-functions.php:882
+msgid "Servings"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:97
+msgid "Recipe Card"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:98
+msgid "Add Phase"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:111, classes/Admin/Recipes/Metaboxes.php:114
+msgid "Additional Notes"
+msgstr ""
+
+#: classes/Admin/Recipes/Metaboxes.php:266
+msgid "Servings:"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:60
+msgid "Remove Phase"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:64
+msgid "Phase Name: ex. Batter, Frosting etc"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:65
+msgid "Phase Description"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:68, classes/Post_Types.php:260, includes/template-functions.php:883
+msgid "Ingredients"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:74, classes/Admin/Recipes/Templates.php:101
+msgid "Sort"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:75
+msgid "Measure"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:76
+msgid "Unit"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:77, classes/Post_Types.php:259
+msgid "Ingredient"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:78, classes/Admin/Recipes/Templates.php:103
+msgid "Note"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:95
+msgid "Steps"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:102
+msgid "Description"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:154
+msgid "Add Ingredient"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:155
+msgid "Remove Ingredient"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:180
+msgid "Add Step"
+msgstr ""
+
+#: classes/Admin/Recipes/Templates.php:181
+msgid "Remove Step"
+msgstr ""
+
+#: classes/Breadcrumb.php:123
+msgid "Error 404"
+msgstr ""
+
+#: classes/Breadcrumb.php:219
+msgid "Products tagged &ldquo;%s&rdquo;"
+msgstr ""
+
+#: classes/Breadcrumb.php:270
+msgid "Posts tagged &ldquo;%s&rdquo;"
+msgstr ""
+
+#: classes/Breadcrumb.php:312
+msgid "Author: %s"
+msgstr ""
+
+#: classes/Breadcrumb.php:348
+msgid "Search results for &ldquo;%s&rdquo;"
+msgstr ""
+
+#: classes/Breadcrumb.php:357
+msgid "Page %d"
+msgstr ""
+
+#: classes/Cron.php:43
+msgid "Once Weekly"
+msgstr ""
+
+#: classes/Post_Types.php:46
+msgctxt "Recipe Post Type General Name"
+msgid "%2$s"
+msgstr ""
+
+#: classes/Post_Types.php:47
+msgctxt "Recipe Post Type Singular Name"
+msgid "%1$s"
+msgstr ""
+
+#: classes/Post_Types.php:48, classes/Post_Types.php:107
+msgid "Add New"
+msgstr ""
+
+#: classes/Post_Types.php:49, classes/Post_Types.php:108
+msgid "Add New %1$s"
+msgstr ""
+
+#: classes/Post_Types.php:50, classes/Post_Types.php:109
+msgid "Edit %1$s"
+msgstr ""
+
+#: classes/Post_Types.php:51, classes/Post_Types.php:110
+msgid "New %1$s"
+msgstr ""
+
+#: classes/Post_Types.php:52
+msgid "All %2$s"
+msgstr ""
+
+#: classes/Post_Types.php:53, classes/Post_Types.php:112
+msgid "View %1$s"
+msgstr ""
+
+#: classes/Post_Types.php:54, classes/Post_Types.php:113
+msgid "Search %2$s"
+msgstr ""
+
+#: classes/Post_Types.php:55, classes/Post_Types.php:114
+msgid "No %2$s found"
+msgstr ""
+
+#: classes/Post_Types.php:56, classes/Post_Types.php:115
+msgid "No %2$s found in Trash"
+msgstr ""
+
+#: classes/Post_Types.php:69
+msgid "Recipe information pages"
+msgstr ""
+
+#: classes/Post_Types.php:105
+msgctxt "Ingredient Post Type General Name"
+msgid "%2$s"
+msgstr ""
+
+#: classes/Post_Types.php:106
+msgctxt "Ingredient Post Type Singular Name"
+msgid "%1$s"
+msgstr ""
+
+#: classes/Post_Types.php:111
+msgid "%2$s"
+msgstr ""
+
+#: classes/Post_Types.php:128
+msgid "Ingredient information pages"
+msgstr ""
+
+#: classes/Post_Types.php:170
+msgctxt "Taxonomy General Name"
+msgid "Courses"
+msgstr ""
+
+#: classes/Post_Types.php:171
+msgctxt "Taxonomy Singular Name"
+msgid "Course"
+msgstr ""
+
+#: classes/Post_Types.php:172
+msgid "Course"
+msgstr ""
+
+#: classes/Post_Types.php:173
+msgid "All Courses"
+msgstr ""
+
+#: classes/Post_Types.php:174
+msgid "Parent Course"
+msgstr ""
+
+#: classes/Post_Types.php:175
+msgid "Parent Course:"
+msgstr ""
+
+#: classes/Post_Types.php:176
+msgid "New Course Name"
+msgstr ""
+
+#: classes/Post_Types.php:177
+msgid "Add New Course"
+msgstr ""
+
+#: classes/Post_Types.php:178
+msgid "Edit Course"
+msgstr ""
+
+#: classes/Post_Types.php:179
+msgid "Update Course"
+msgstr ""
+
+#: classes/Post_Types.php:180
+msgid "Separate courses with commas"
+msgstr ""
+
+#: classes/Post_Types.php:181
+msgid "Search courses"
+msgstr ""
+
+#: classes/Post_Types.php:182
+msgid "Add or remove courses"
+msgstr ""
+
+#: classes/Post_Types.php:183
+msgid "Choose from the most used courses"
+msgstr ""
+
+#: classes/Post_Types.php:255
+msgid "Recipe"
+msgstr ""
+
+#: classes/Post_Types.php:256, includes/setting-functions.php:410
+msgid "Recipes"
+msgstr ""
+
+#: classes/Post.php:136
+msgid "Can't get property %s"
+msgstr ""
+
+#: classes/Tracking.php:265
+msgid "Allow Recipe Manager to track plugin usage? Opt-in to tracking and our newsletter and we will immediately e-mail you a 20% discount which you can use on any of our future addons or bundles. No sensitive data is tracked."
+msgstr ""
+
+#: classes/Tracking.php:267
+msgid "Allow tracking"
+msgstr ""
+
+#: classes/Tracking.php:268
+msgid "Do not allow tracking"
+msgstr ""
+
+#: classes/Widget.php:254
+msgid "Choose Image"
+msgstr ""
+
+#: includes/format-functions.php:20
+msgid "%1$dh %2$dm"
+msgstr ""
+
+#: includes/format-functions.php:20
+msgid "%2$dm"
+msgstr ""
+
+#: includes/format-functions.php:32
+msgid "%1$d hr %2$d min"
+msgstr ""
+
+#: includes/format-functions.php:32
+msgid "%2$d min"
+msgstr ""
+
+#: includes/format-functions.php:68
+msgid "Cup"
+msgstr ""
+
+#: includes/format-functions.php:69
+msgid "Cups"
+msgstr ""
+
+#: includes/format-functions.php:70
+msgid "cup"
+msgstr ""
+
+#: includes/format-functions.php:71
+msgid "cups"
+msgstr ""
+
+#: includes/format-functions.php:72
+msgid "c"
+msgstr ""
+
+#: includes/format-functions.php:75
+msgid "Tablespoon"
+msgstr ""
+
+#: includes/format-functions.php:76
+msgid "Tablespoons"
+msgstr ""
+
+#: includes/format-functions.php:77
+msgid "tbsp"
+msgstr ""
+
+#: includes/format-functions.php:78
+msgid "tbsps"
+msgstr ""
+
+#: includes/format-functions.php:79
+msgid "T"
+msgstr ""
+
+#: includes/format-functions.php:82
+msgid "Teaspoon"
+msgstr ""
+
+#: includes/format-functions.php:83
+msgid "Teaspoons"
+msgstr ""
+
+#: includes/format-functions.php:84
+msgid "tsp"
+msgstr ""
+
+#: includes/format-functions.php:85
+msgid "tsps"
+msgstr ""
+
+#: includes/format-functions.php:86
+msgid "t"
+msgstr ""
+
+#: includes/format-functions.php:89
+msgid "Fluid Ounce"
+msgstr ""
+
+#: includes/format-functions.php:90
+msgid "Fluid Ounces"
+msgstr ""
+
+#: includes/format-functions.php:91, includes/format-functions.php:93
+msgid "fl oz"
+msgstr ""
+
+#: includes/format-functions.php:92
+msgid "fl ozs"
+msgstr ""
+
+#: includes/format-functions.php:96
+msgid "Gill"
+msgstr ""
+
+#: includes/format-functions.php:97
+msgid "Gills"
+msgstr ""
+
+#: includes/format-functions.php:98, includes/format-functions.php:100
+msgid "gill"
+msgstr ""
+
+#: includes/format-functions.php:99
+msgid "gills"
+msgstr ""
+
+#: includes/format-functions.php:103
+msgid "Pint"
+msgstr ""
+
+#: includes/format-functions.php:104
+msgid "Pints"
+msgstr ""
+
+#: includes/format-functions.php:105
+msgid "pt"
+msgstr ""
+
+#: includes/format-functions.php:106
+msgid "pts"
+msgstr ""
+
+#: includes/format-functions.php:107
+msgid "p"
+msgstr ""
+
+#: includes/format-functions.php:110
+msgid "Quart"
+msgstr ""
+
+#: includes/format-functions.php:111
+msgid "Quarts"
+msgstr ""
+
+#: includes/format-functions.php:113
+msgid "qts"
+msgstr ""
+
+#: includes/format-functions.php:114
+msgid "q"
+msgstr ""
+
+#: includes/format-functions.php:117
+msgid "Gallon"
+msgstr ""
+
+#: includes/format-functions.php:118
+msgid "Gallons"
+msgstr ""
+
+#: includes/format-functions.php:119
+msgid "gal"
+msgstr ""
+
+#: includes/format-functions.php:120
+msgid "gals"
+msgstr ""
+
+#: includes/format-functions.php:121
+msgid "g"
+msgstr ""
+
+#: includes/format-functions.php:124
+msgid "Milliliter"
+msgstr ""
+
+#: includes/format-functions.php:125
+msgid "Milliliters"
+msgstr ""
+
+#: includes/format-functions.php:126, includes/format-functions.php:128
+msgid "mL"
+msgstr ""
+
+#: includes/format-functions.php:127
+msgid "mLs"
+msgstr ""
+
+#: includes/format-functions.php:131
+msgid "Liter"
+msgstr ""
+
+#: includes/format-functions.php:132
+msgid "Liters"
+msgstr ""
+
+#: includes/format-functions.php:133, includes/format-functions.php:135
+msgid "L"
+msgstr ""
+
+#: includes/format-functions.php:134
+msgid "Ls"
+msgstr ""
+
+#: includes/format-functions.php:138
+msgid "Deciliter"
+msgstr ""
+
+#: includes/format-functions.php:139
+msgid "Deciliters"
+msgstr ""
+
+#: includes/format-functions.php:140, includes/format-functions.php:142
+msgid "dL"
+msgstr ""
+
+#: includes/format-functions.php:141
+msgid "dLs"
+msgstr ""
+
+#: includes/format-functions.php:145
+msgid "Pound"
+msgstr ""
+
+#: includes/format-functions.php:146
+msgid "Pounds"
+msgstr ""
+
+#: includes/format-functions.php:147
+msgid "lb"
+msgstr ""
+
+#: includes/format-functions.php:148
+msgid "lbs"
+msgstr ""
+
+#: includes/format-functions.php:149
+msgid "#"
+msgstr ""
+
+#: includes/format-functions.php:152
+msgid "Ounce"
+msgstr ""
+
+#: includes/format-functions.php:153
+msgid "Ounces"
+msgstr ""
+
+#: includes/format-functions.php:154, includes/format-functions.php:156
+msgid "oz"
+msgstr ""
+
+#: includes/format-functions.php:155
+msgid "ozs"
+msgstr ""
+
+#: includes/format-functions.php:159
+msgid "Milligram"
+msgstr ""
+
+#: includes/format-functions.php:160
+msgid "Milligrams"
+msgstr ""
+
+#: includes/format-functions.php:161, includes/format-functions.php:163
+msgid "mg"
+msgstr ""
+
+#: includes/format-functions.php:162
+msgid "mgs"
+msgstr ""
+
+#: includes/format-functions.php:166
+msgid "Kilogram"
+msgstr ""
+
+#: includes/format-functions.php:167
+msgid "Kilograms"
+msgstr ""
+
+#: includes/format-functions.php:168, includes/format-functions.php:170
+msgid "kg"
+msgstr ""
+
+#: includes/format-functions.php:169
+msgid "kgs"
+msgstr ""
+
+#: includes/format-functions.php:174
+msgid "Millimeter"
+msgstr ""
+
+#: includes/format-functions.php:175
+msgid "Millimeters"
+msgstr ""
+
+#: includes/format-functions.php:176, includes/format-functions.php:177, includes/format-functions.php:178
+msgid "mm"
+msgstr ""
+
+#: includes/format-functions.php:181
+msgid "Centimeter"
+msgstr ""
+
+#: includes/format-functions.php:182
+msgid "Centimeters"
+msgstr ""
+
+#: includes/format-functions.php:183, includes/format-functions.php:184, includes/format-functions.php:185
+msgid "cm"
+msgstr ""
+
+#: includes/format-functions.php:188
+msgid "Meter"
+msgstr ""
+
+#: includes/format-functions.php:189
+msgid "Meters"
+msgstr ""
+
+#: includes/format-functions.php:190, includes/format-functions.php:191, includes/format-functions.php:192
+msgid "m"
+msgstr ""
+
+#: includes/format-functions.php:195
+msgid "Inch"
+msgstr ""
+
+#: includes/format-functions.php:196
+msgid "Inches"
+msgstr ""
+
+#: includes/format-functions.php:197, includes/format-functions.php:198
+msgid "in"
+msgstr ""
+
+#: includes/format-functions.php:199
+msgid "\""
+msgstr ""
+
+#: includes/setting-functions.php:201
+msgid "Make recipes private?"
+msgstr ""
+
+#: includes/setting-functions.php:202
+msgid "Use this to disable direct access to recipes. Use the [recipe] shortcode instead."
+msgstr ""
+
+#: includes/setting-functions.php:209
+msgid "Enable Categories?"
+msgstr ""
+
+#: includes/setting-functions.php:210
+msgid "This will let you add post categories to your recipes."
+msgstr ""
+
+#: includes/setting-functions.php:215
+msgid "Enable Tags?"
+msgstr ""
+
+#: includes/setting-functions.php:216
+msgid "This will let you add post tags to your recipes."
+msgstr ""
+
+#: includes/setting-functions.php:223
+msgid "Single Recipes"
+msgstr ""
+
+#: includes/setting-functions.php:229
+msgid "Featured Image Size"
+msgstr ""
+
+#: includes/setting-functions.php:230
+msgid "This only applies to recipe pages, not the shortcode."
+msgstr ""
+
+#: includes/setting-functions.php:233
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/setting-functions.php:234
+msgid "Medium"
+msgstr ""
+
+#: includes/setting-functions.php:235
+msgid "Large"
+msgstr ""
+
+#: includes/setting-functions.php:236
+msgid "Full Size"
+msgstr ""
+
+#: includes/setting-functions.php:242
+msgid "Featured Image Position"
+msgstr ""
+
+#: includes/setting-functions.php:243
+msgid "Where should the image be displayed?"
+msgstr ""
+
+#: includes/setting-functions.php:246
+msgid "Before The Title"
+msgstr ""
+
+#: includes/setting-functions.php:247
+msgid "After the Title"
+msgstr ""
+
+#: includes/setting-functions.php:253
+msgid "Display Ingredients"
+msgstr ""
+
+#: includes/setting-functions.php:254
+msgid "Choose how you want to display your ingredients on your recipe cards."
+msgstr ""
+
+#: includes/setting-functions.php:257
+msgid "Per Phase"
+msgstr ""
+
+#: includes/setting-functions.php:258
+msgid "Together"
+msgstr ""
+
+#: includes/setting-functions.php:259
+msgid "Together Grouped by Phase"
+msgstr ""
+
+#: includes/setting-functions.php:268
+msgid "Disable Styles"
+msgstr ""
+
+#: includes/setting-functions.php:269
+msgid "Check this to disable all included styling of buttons, ingredients, and all other elements."
+msgstr ""
+
+#: includes/setting-functions.php:356
+msgid "Settings updated."
+msgstr ""
+
+#: includes/setting-functions.php:409
+msgid "General"
+msgstr ""
+
+#: includes/setting-functions.php:411
+msgid "Layouts"
+msgstr ""
+
+#: includes/setting-functions.php:412
+msgid "Styles"
+msgstr ""
+
+#: includes/setting-functions.php:414
+msgid "Licenses"
+msgstr ""
+
+#: includes/setting-functions.php:415
+msgid "Misc"
+msgstr ""
+
+#: includes/setting-functions.php:681
+msgid "The callback function used for the <strong>%s</strong> setting is missing."
+msgstr ""
+
+#: includes/setting-functions.php:759
+msgid "Choose Icon"
+msgstr ""
+
+#: includes/setting-functions.php:866
+msgid "Upload File"
+msgstr ""
+
+#: includes/setting-functions.php:941
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/template-functions.php:74
+msgid "New recipes"
+msgstr ""
+
+#: includes/template-functions.php:82
+msgid "New recipes added to %s"
+msgstr ""
+
+#: includes/template-functions.php:90
+msgid "New recipes tagged %s"
+msgstr ""
+
+#: includes/template-functions.php:335
+msgid "Search Results: &ldquo;%s&rdquo;"
+msgstr ""
+
+#: includes/template-functions.php:338
+msgid "&nbsp;&ndash; Page %s"
+msgstr ""
+
+#: includes/template-functions.php:691
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: includes/template-functions.php:879
+msgid "Prep"
+msgstr ""
+
+#: includes/template-functions.php:880
+msgid "Cook"
+msgstr ""
+
+#: includes/template-functions.php:881
+msgid "Total"
+msgstr ""
+
+#: includes/template-functions.php:884
+msgid "Instructions"
+msgstr ""
+
+#: includes/template-functions.php:885
+msgid "Notes"
+msgstr ""
+
+#: includes/template-functions.php:886
+msgid "Courses"
+msgstr ""
+
+#: includes/template-functions.php:887
+msgid "Categories"
+msgstr ""
+
+#: includes/template-functions.php:888
+msgid "Tags"
+msgstr ""
+
+#: includes/tool-functions.php:16
+msgid "System Info"
+msgstr ""
+
+#: includes/tool-functions.php:18
+msgid "Import / Export"
+msgstr ""
+
+#: includes/tool-functions.php:30
+msgid "To copy the system info, click below then press Ctrl + C (PC) or Cmd + C (Mac)."
+msgstr ""
+
+#: recipe-manager.php:288
+msgid "The %4$s %1$s %5$s plugin requires %2$s version %3$s or greater."
+msgstr ""
+
+#: recipe-manager.php:290
+msgid "Plugin Activation Error"
+msgstr ""
+
+#: templates/loop/allergen-warnings.php:23
+msgid "Allergen Warning: "
+msgstr ""
+
+#: templates/loop/no-recipes-found.php:17
+msgid "No recipes were found matching your selection."
+msgstr ""
+
+#: templates/loop/result-count.php:27
+msgid "Showing the single result"
+msgstr ""
+
+#: templates/loop/result-count.php:29
+msgid "Showing all %d results"
+msgstr ""
+
+#: templates/loop/result-count.php:31
+msgctxt "%1$d = first, %2$d = last, %3$d = total"
+msgid "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr ""
+
+#: templates/single-recipe/allergen-warnings.php:27
+msgid "Contains %1s which may cause allergic reactions."
+msgstr ""
+
+#: templates/single-recipe/allergen-warnings.php:30
+msgid "Warning"
+msgstr ""
+
+#: templates/single-recipe/recipe-image-placeholder.php:16
+msgid "Placeholder"
+msgstr ""

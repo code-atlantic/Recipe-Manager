@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Recipe Steps
+   ========================================================================== */
+
+.recipe-steps {
+
+  margin: 0 0 $base_spacing;
+  padding: 0;
+  list-style-position: inside;//this is important addition
+
+  .recipe-step {
+    margin-bottom: $base_spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
