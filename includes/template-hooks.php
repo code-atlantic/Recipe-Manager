@@ -77,7 +77,6 @@ add_action( 'rcpm_before_recipes_loop', 'rcpm_result_count', 20 );
 
 /**
  * Recipe Loop Items
- *
  */
 add_action( 'rcpm_before_recipes_loop_item_title', 'rcpm_template_loop_recipe_thumbnail', 10 );
 add_action( 'rcpm_recipes_loop_item_title', 'rcpm_template_loop_recipe_title', 10 );
@@ -86,10 +85,14 @@ add_action( 'rcpm_after_recipes_loop_item', 'rcpm_template_loop_recipe_excerpt',
 add_action( 'rcpm_recipes_loop_item_meta', 'rcpm_template_loop_recipe_time', 10 );
 add_action( 'rcpm_recipes_loop_item_meta', 'rcpm_template_loop_recipe_allergens', 20 );
 
+/**
+ * Recipe List Items
+ */
+add_action( 'rcpm_recipes_list_item_title', 'rcpm_template_loop_recipe_title', 10 );
+
 
 /**
  * Recipe Shortcode
- *
  */
 add_action( 'rcpm_shortcode_recipe_summary', 'rcpm_template_loop_recipe_title', 5 );
 add_action( 'rcpm_shortcode_recipe_summary', 'rcpm_show_recipe_images', 20 );
@@ -115,10 +118,13 @@ add_action( 'rcpm_single_recipe_summary', 'rcpm_show_recipe_images', rcpm_get_op
 add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_actions_bar', 30 );
 add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_description', 40 );
 add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_meta', 50 );
-add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_recipe_times', 50 );
-add_action( 'rcpm_single_recipe_summary', 'rcpm_recipe_ingredients', 60 );
-add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_recipe_phases', 70 );
-add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_additional_notes', 80 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_recipe_times', 60 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_recipe_ingredients', 70 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_recipe_phases', 80 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_additional_notes', 90 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_allergen_warnings', 100 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_meta_categories', 110 );
+add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_meta_post_tags', 120 );
 
 
 /**
@@ -126,8 +132,5 @@ add_action( 'rcpm_single_recipe_summary', 'rcpm_template_single_additional_notes
  *
  * @see rcpm_template_single_title()
  */
-add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_meta_categories', 10 );
-add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_meta_post_tags', 20 );
-add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_meta_courses', 30 );
-add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_recipe_servings', 40 );
-add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_allergen_warnings', 50 );
+add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_meta_courses', 10 );
+add_action( 'rcpm_single_recipe_meta', 'rcpm_template_single_recipe_servings', 20 );
