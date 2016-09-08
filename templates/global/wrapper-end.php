@@ -17,7 +17,9 @@ do_action( 'rcpm_before_recipe_wrapper_end' );
 
 switch( $template ) {
 	case 'twentyeleven' :
-		echo '</div></div>';
+		echo '</div>';
+		get_sidebar( 'content' );
+		echo '</div>';
 		break;
 	case 'twentytwelve' :
 		echo '</div></div>';
@@ -31,6 +33,9 @@ switch( $template ) {
 		break;
 	case 'twentyfifteen' :
 		echo '</div></div>';
+		break;
+	case 'twentysixteen' :
+		echo '</main></div>';
 		break;
 	default :
 		echo '</div></div>';
