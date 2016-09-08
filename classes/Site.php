@@ -27,7 +27,7 @@ class Site {
 
 
 
-		if ( in_array( $theme, array( 'twentyfourteen', 'twentyfifteen' ) ) ) {
+		if ( in_array( $theme, array( 'twentyeleven', 'twentyfourteen', 'twentyfifteen', 'twentysixteen' ) ) ) {
 			wp_enqueue_style( 'rcpm-layout', RCPM::$URL . 'assets/css/rcpm-layout' . $suffix . '.css', null, RCPM::$VER );
 		}
 
