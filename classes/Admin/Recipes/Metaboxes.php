@@ -181,8 +181,11 @@ class Metaboxes {
 				);
 				$phases[] = $phase;
 
-				foreach ( $card['ingredients'] as $key => $ingredient ) {
+				if ( empty( $card['ingredients'] ) ) {
+					$card['ingredients'] = array();
+				}
 
+				foreach ( $card['ingredients'] as $key => $ingredient ) {
 					if ( empty( $ingredient['label'] ) ) {
 						unset( $card['ingredients'][ $key ] );
 						continue;
@@ -207,15 +210,18 @@ class Metaboxes {
 					$card['ingredients'][ $key ]         = $ingredient;
 				}
 
-				if ( ! empty( $card['steps'] ) ) {
-					foreach ( $card['steps'] as $key => $step ) {
-						if ( empty( $step['description'] ) ) {
-							unset( $card['steps'][ $key ] );
-						} else {
-							// Trim the extra whitespaces.
-							$card['steps'][ $key ] = array_map( 'trim', $step );
-						}
+				if ( empty( $card['steps'] ) ) {
+					$card['steps'] = array();
+				}
+
+				foreach ( $card['steps'] as $key => $step ) {
+					if ( empty( $step['description'] ) ) {
+						unset( $card['steps'][ $key ] );
+						continue;
 					}
+
+					// Trim the extra whitespaces.
+					$card['steps'][ $key ] = array_map( 'trim', $step );
 				}
 
 				$phase_meta = array(
