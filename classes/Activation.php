@@ -252,8 +252,7 @@ class Activation {
 
 			add_option( 'rcpm_sample_recipe_1', true );
 
-			$redirect = admin_url( 'post.php?post=' . $recipe_id . '&action=edit' );
-
+			//$redirect = admin_url( 'post.php?post=' . $recipe_id . '&action=edit' );
 		}
 
 
