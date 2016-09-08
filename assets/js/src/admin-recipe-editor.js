@@ -1,5 +1,6 @@
 var RCPM_Recipe_Editor;
 (function ($, editor_vars) {
+    'use strict';
     var vars = editor_vars || {
             ingredients: {},
             measurement_units: {
@@ -76,8 +77,7 @@ var RCPM_Recipe_Editor;
                 $this.data('ingredientindex', index);
 
                 $this.find('input, textarea, select').each(function () {
-                    var replace_with = "[ingredients][" + index + "]";
-                    this.name = this.name.replace("[ingredients][" + originalIndex + "]", replace_with).replace("[ingredients][]", replace_with);
+                    this.name = this.name.replace(/\[ingredients]\[([0-9])*]/, "[ingredients][" + index + "]");
                 });
 
             });
@@ -91,8 +91,7 @@ var RCPM_Recipe_Editor;
                 $this.data('stepindex', index);
 
                 $this.find('input, textarea, select').each(function () {
-                    var replace_with = "[steps][" + index + "]";
-                    this.name = this.name.replace("[steps][" + originalIndex + "]", replace_with).replace("[steps][]", replace_with);
+                    this.name = this.name.replace(/\[steps]\[([0-9])*]/, "[steps][" + index + "]");
                 });
 
             });
@@ -112,9 +111,8 @@ var RCPM_Recipe_Editor;
                 $this.find('.phase-title').data('target', '#phase-' + number);
                 $this.find('.phase-content').attr('id', 'phase-' + number);
 
-                $this.find('input, textarea, select').each(function () {
-                    var replace_with = "recipe_card[" + index + "]";
-                    this.name = this.name.replace("recipe_card[" + originalIndex + "]", replace_with).replace("recipe_card[]", replace_with);
+                $this.find('.recipe-ingredients, .recipe-steps').find('input, textarea, select').each(function () {
+                    this.name = this.name.replace(/recipe_card\[([0-9])*]/, "recipe_card[" + index + "]");
                 });
 
                 RCPM_Recipe_Editor.renumber_ingredients_steps($this);
