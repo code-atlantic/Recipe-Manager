@@ -339,6 +339,8 @@ p.last {
   overflow: hidden;
   z-index: 100105;
   transition: height .2s, margin-top .2s;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -350,6 +352,8 @@ p.last {
     right: 10px;
     bottom: 10px;
     left: 10px;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
     transform: translateY(0px);
   }
 }

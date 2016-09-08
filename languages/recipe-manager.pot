@@ -15,39 +15,143 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: classes/Activation.php:53
+#: classes/Activation.php:57
 msgid "Appetizer"
 msgstr ""
 
-#: classes/Activation.php:54
+#: classes/Activation.php:58
 msgid "Brunch"
 msgstr ""
 
-#: classes/Activation.php:55
+#: classes/Activation.php:59
 msgid "Breakfast"
 msgstr ""
 
-#: classes/Activation.php:56
+#: classes/Activation.php:60
 msgid "Lunch"
 msgstr ""
 
-#: classes/Activation.php:57
+#: classes/Activation.php:61, classes/Activation.php:242
 msgid "Dinner"
 msgstr ""
 
-#: classes/Activation.php:58
+#: classes/Activation.php:62
 msgid "Dessert"
 msgstr ""
 
-#: classes/Activation.php:59
+#: classes/Activation.php:63
 msgid "Beverage"
 msgstr ""
 
-#: classes/Admin/Assets.php:52, classes/Admin/Recipes/Templates.php:59
+#: classes/Activation.php:81
+msgid "Peanut"
+msgstr ""
+
+#: classes/Activation.php:82
+msgid "Tree nuts"
+msgstr ""
+
+#: classes/Activation.php:83, classes/Activation.php:98
+msgid "Milk"
+msgstr ""
+
+#: classes/Activation.php:84
+msgid "Egg"
+msgstr ""
+
+#: classes/Activation.php:85
+msgid "Wheat"
+msgstr ""
+
+#: classes/Activation.php:86
+msgid "Soy"
+msgstr ""
+
+#: classes/Activation.php:87
+msgid "Fish"
+msgstr ""
+
+#: classes/Activation.php:88
+msgid "Shellfish"
+msgstr ""
+
+#: classes/Activation.php:114, classes/Activation.php:213
+msgid "Sunflower Oil"
+msgstr ""
+
+#: classes/Activation.php:115, classes/Activation.php:205, classes/Activation.php:206
+msgid "Baby New Potatoes"
+msgstr ""
+
+#: classes/Activation.php:116
+msgid "Leg of Lamb"
+msgstr ""
+
+#: classes/Activation.php:117
+msgid "Garlic Bulb"
+msgstr ""
+
+#: classes/Activation.php:118
+msgid "Carrots"
+msgstr ""
+
+#: classes/Activation.php:119
+msgid "Rosemary"
+msgstr ""
+
+#: classes/Activation.php:120
+msgid "Fresh Lemon Juice"
+msgstr ""
+
+#: classes/Activation.php:129
+msgid "Slow Roasted Lamb with Fried Potatoes"
+msgstr ""
+
+#: classes/Activation.php:130
+msgid "This is the ideal meal for a special occasion or lazy sunday afternoon."
+msgstr ""
+
+#: classes/Activation.php:131
+msgid "slow-roasted-lamb-with-fried-potatoes"
+msgstr ""
+
+#: classes/Activation.php:137
+msgid "The Lamb"
+msgstr ""
+
+#: classes/Activation.php:138
+msgid "The most important thing to remember about cooking a leg of lamb is to not over-cook it. Lamb has such fantastic flavor on its own, and is so naturally tender, that it is bound to turn out well, as long as it still has a touch of pink to the meat."
+msgstr ""
+
+#: classes/Activation.php:142
+msgid "The Potatoes"
+msgstr ""
+
+#: classes/Activation.php:143
+msgid "A wonderful alternative to chips and so much simpler to prepare"
+msgstr ""
+
+#: classes/Activation.php:219
+msgid "Cut the potatoes into chunks. Bring a large pan of water to the boil, then cook the potatoes for 3 mins. Drain, shake out onto a kitchen paper-lined tray and leave to cool."
+msgstr ""
+
+#: classes/Activation.php:223
+msgid "When ready to serve, heat the oil in a large non-stick frying pan until you can feel a strong heat rising. If your pan isn’t large enough, fry the potatoes in two batches – rather than crowding them. Have kitchen paper ready to drain them on. Add the potatoes in a single layer, not too tightly packed. Turn the heat to medium-high, so that the potatoes sizzle, but don’t stir until they start to brown underneath."
+msgstr ""
+
+#: classes/Activation.php:227
+msgid "Turn them all evenly 2 or 3 times until nicely browned all over – this can take about 7 mins. Then lift out with a fish slice or large slotted spoon to drain on more kitchen paper. Sprinkle with sea salt."
+msgstr ""
+
+#: classes/Activation.php:232
+msgid "Aluminum foil can be used to keep food moist, cook it evenly, and make clean-up easier."
+msgstr ""
+
+#: classes/Admin/Assets.php:54, classes/Admin/Recipes/Templates.php:59
 msgid "Phase"
 msgstr ""
 
-#: classes/Admin/Assets.php:53
+#: classes/Admin/Assets.php:55
 msgid "Are you sure you want to delete this phase?"
 msgstr ""
 
@@ -87,39 +191,39 @@ msgstr ""
 msgid "Add file"
 msgstr ""
 
-#: classes/Admin/Pages.php:23, classes/Admin/Pages.php:24
+#: classes/Admin/Pages.php:24, classes/Admin/Pages.php:25
 msgid "Settings"
 msgstr ""
 
-#: classes/Admin/Pages.php:31, classes/Admin/Pages.php:32
+#: classes/Admin/Pages.php:32, classes/Admin/Pages.php:33
 msgid "Tools"
 msgstr ""
 
-#: classes/Admin/Pages.php:40, classes/Admin/Pages.php:41, includes/setting-functions.php:413
+#: classes/Admin/Pages.php:41, classes/Admin/Pages.php:42, includes/setting-functions.php:413
 msgid "Addons"
 msgstr ""
 
-#: classes/Admin/Pages.php:63
+#: classes/Admin/Pages.php:64
 msgid "__Recipe Manager Settings"
 msgstr ""
 
-#: classes/Admin/Pages.php:63
+#: classes/Admin/Pages.php:64
 msgid "Recipe Manager Settings"
 msgstr ""
 
-#: classes/Admin/Pages.php:107
+#: classes/Admin/Pages.php:108
 msgid "__Recipe Manager Tools"
 msgstr ""
 
-#: classes/Admin/Pages.php:107
+#: classes/Admin/Pages.php:108
 msgid "Recipe Manager Tools"
 msgstr ""
 
-#: classes/Admin/Pages.php:150
+#: classes/Admin/Pages.php:151
 msgid "Recipe Manager Addons"
 msgstr ""
 
-#: classes/Admin/Pages.php:250
+#: classes/Admin/Pages.php:251
 msgid "Learn More"
 msgstr ""
 
@@ -159,7 +263,7 @@ msgstr ""
 msgid "Enter the prep & cook times. HH:MM"
 msgstr ""
 
-#: classes/Admin/Recipes/Metaboxes.php:63, includes/template-functions.php:882
+#: classes/Admin/Recipes/Metaboxes.php:63
 msgid "Servings"
 msgstr ""
 
@@ -175,7 +279,7 @@ msgstr ""
 msgid "Additional Notes"
 msgstr ""
 
-#: classes/Admin/Recipes/Metaboxes.php:266
+#: classes/Admin/Recipes/Metaboxes.php:272
 msgid "Servings:"
 msgstr ""
 
@@ -191,7 +295,7 @@ msgstr ""
 msgid "Phase Description"
 msgstr ""
 
-#: classes/Admin/Recipes/Templates.php:68, classes/Post_Types.php:260, includes/template-functions.php:883
+#: classes/Admin/Recipes/Templates.php:68, classes/Post_Types.php:260, includes/template-functions.php:880
 msgid "Ingredients"
 msgstr ""
 
@@ -901,48 +1005,52 @@ msgstr ""
 msgid "New recipes tagged %s"
 msgstr ""
 
-#: includes/template-functions.php:335
+#: includes/template-functions.php:334
 msgid "Search Results: &ldquo;%s&rdquo;"
 msgstr ""
 
-#: includes/template-functions.php:338
+#: includes/template-functions.php:337
 msgid "&nbsp;&ndash; Page %s"
 msgstr ""
 
-#: includes/template-functions.php:691
+#: includes/template-functions.php:695
 msgctxt "breadcrumb"
 msgid "Home"
 msgstr ""
 
-#: includes/template-functions.php:879
+#: includes/template-functions.php:876
 msgid "Prep"
 msgstr ""
 
-#: includes/template-functions.php:880
+#: includes/template-functions.php:877
 msgid "Cook"
 msgstr ""
 
-#: includes/template-functions.php:881
+#: includes/template-functions.php:878
 msgid "Total"
 msgstr ""
 
-#: includes/template-functions.php:884
+#: includes/template-functions.php:879
+msgid "Serves"
+msgstr ""
+
+#: includes/template-functions.php:881
 msgid "Instructions"
 msgstr ""
 
-#: includes/template-functions.php:885
+#: includes/template-functions.php:882
 msgid "Notes"
 msgstr ""
 
-#: includes/template-functions.php:886
+#: includes/template-functions.php:883
 msgid "Courses"
 msgstr ""
 
-#: includes/template-functions.php:887
+#: includes/template-functions.php:884
 msgid "Categories"
 msgstr ""
 
-#: includes/template-functions.php:888
+#: includes/template-functions.php:885
 msgid "Tags"
 msgstr ""
 
