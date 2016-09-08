@@ -73,7 +73,7 @@ gulp.task('css', function() {
         .pipe($fn.sourcemaps.init({
             loadMaps: true
         }))
-        .pipe($fn.autoprefixer('last 2 version', '> 1%', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe($fn.autoprefixer('last 5 version', '> 1%', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe($fn.sourcemaps.write('.'))
         .pipe($fn.plumber.stop())
         .pipe(gulp.dest('assets/css'))
