@@ -484,8 +484,8 @@ function rcpm_checkbox_callback( $args ) {
 	global $rcpm_options;
 
 	$checked = isset( $rcpm_options[ $args['id'] ] ) ? checked( 1, $rcpm_options[ $args['id'] ], false ) : '';
-	$html    = '<input type="checkbox" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="1" ' . $checked . '/>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html    = '<input type="checkbox" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="1" ' . $checked . '/>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -512,8 +512,8 @@ function rcpm_multicheck_callback( $args ) {
 			} else {
 				$enabled = null;
 			}
-			echo '<input name="rcpm_settings[' . $args['id'] . '][' . $key . ']" id="rcpm_settings[' . $args['id'] . '][' . $key . ']" type="checkbox" value="' . $option . '" ' . checked( $option, $enabled, false ) . '/>&nbsp;';
-			echo '<label class="field-description" for="rcpm_settings[' . $args['id'] . '][' . $key . ']">' . $option . '</label><br/>';
+			echo '<input name="rcpm_settings[' . $args['id'] . '][' . $key . ']" id="rcpm_settings_' . $args['id'] . '[' . $key . ']" type="checkbox" value="' . $option . '" ' . checked( $option, $enabled, false ) . '/>&nbsp;';
+			echo '<label class="field-description" for="rcpm_settings_' . $args['id'] . '[' . $key . ']">' . $option . '</label><br/>';
 		endforeach;
 		echo '<p class="description">' . $args['desc'] . '</p>';
 	}
@@ -543,8 +543,8 @@ function rcpm_radio_callback( $args ) {
 			$checked = true;
 		}
 
-		echo '<input name="rcpm_settings[' . $args['id'] . ']"" id="rcpm_settings[' . $args['id'] . '][' . $key . ']" type="radio" value="' . $key . '" ' . checked( true, $checked, false ) . '/>&nbsp;';
-		echo '<label class="field-description" for="rcpm_settings[' . $args['id'] . '][' . $key . ']">' . $option . '</label><br/>';
+		echo '<input name="rcpm_settings[' . $args['id'] . ']"" id="rcpm_settings_' . $args['id'] . '[' . $key . ']" type="radio" value="' . $key . '" ' . checked( true, $checked, false ) . '/>&nbsp;';
+		echo '<label class="field-description" for="rcpm_settings_' . $args['id'] . '[' . $key . ']">' . $option . '</label><br/>';
 	endforeach;
 
 	echo '<p class="description">' . $args['desc'] . '</p>';
@@ -573,8 +573,8 @@ function rcpm_text_callback( $args ) {
 
 	$readonly = $args['readonly'] === true ? ' readonly="readonly"' : '';
 	$size     = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
-	$html     = '<input type="text" class="' . $size . '-text" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( stripslashes( $value ) ) . '"' . $readonly . '/>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html     = '<input type="text" class="' . $size . '-text" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( stripslashes( $value ) ) . '"' . $readonly . '/>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -605,8 +605,8 @@ function rcpm_number_callback( $args ) {
 	$step = isset( $args['step'] ) ? $args['step'] : 1;
 
 	$size = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
-	$html = '<input type="number" step="' . esc_attr( $step ) . '" max="' . esc_attr( $max ) . '" min="' . esc_attr( $min ) . '" class="' . $size . '-text" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( stripslashes( $value ) ) . '"/>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html = '<input type="number" step="' . esc_attr( $step ) . '" max="' . esc_attr( $max ) . '" min="' . esc_attr( $min ) . '" class="' . $size . '-text" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( stripslashes( $value ) ) . '"/>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -632,8 +632,8 @@ function rcpm_textarea_callback( $args ) {
 		$value = isset( $args['std'] ) ? $args['std'] : '';
 	}
 
-	$html = '<textarea class="large-text" cols="50" rows="5" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']">' . esc_textarea( stripslashes( $value ) ) . '</textarea>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html = '<textarea class="large-text" cols="50" rows="5" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']">' . esc_textarea( stripslashes( $value ) ) . '</textarea>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -660,8 +660,8 @@ function rcpm_password_callback( $args ) {
 	}
 
 	$size = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
-	$html = '<input type="password" class="' . $size . '-text" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( $value ) . '"/>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html = '<input type="password" class="' . $size . '-text" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( $value ) . '"/>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -714,7 +714,7 @@ function rcpm_select_callback( $args ) {
 		$chosen = '';
 	}
 
-	$html = '<select id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" ' . $chosen . 'data-placeholder="' . $placeholder . '" />';
+	$html = '<select id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" ' . $chosen . 'data-placeholder="' . $placeholder . '" />';
 
 	foreach ( $args['options'] as $option => $name ) :
 		$selected = selected( $option, $value, false );
@@ -722,7 +722,7 @@ function rcpm_select_callback( $args ) {
 	endforeach;
 
 	$html .= '</select>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -757,7 +757,7 @@ function rcpm_dashicon_callback( $args ) {
 	$html .= '<span id="rcpm_settings_' . $args['id'] . '_preview" class="dashicons-picker-preview dashicons ' . $value . '"></span>';
 
 	$html .= '<input type="button" data-target="#rcpm_settings_' . $args['id'] . '" data-preview="#rcpm_settings_' . $args['id'] . '_preview" class="button dashicons-picker" value="' . __( 'Choose Icon', 'recipe-manager' ) . '" />';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	$html .= '</div>';
 
@@ -784,7 +784,7 @@ function rcpm_color_select_callback( $args ) {
 	} else {
 		$value = isset( $args['std'] ) ? $args['std'] : '';
 	}
-	$html = '<select id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']"/>';
+	$html = '<select id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']"/>';
 
 	foreach ( $args['options'] as $option => $color ) :
 		$selected = selected( $option, $value, false );
@@ -792,7 +792,7 @@ function rcpm_color_select_callback( $args ) {
 	endforeach;
 
 	$html .= '</select>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -832,10 +832,10 @@ function rcpm_rich_editor_callback( $args ) {
 		) );
 		$html = ob_get_clean();
 	} else {
-		$html = '<textarea class="large-text" rows="10" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']">' . esc_textarea( stripslashes( $value ) ) . '</textarea>';
+		$html = '<textarea class="large-text" rows="10" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']">' . esc_textarea( stripslashes( $value ) ) . '</textarea>';
 	}
 
-	$html .= '<br/><label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html .= '<br/><label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -862,9 +862,9 @@ function rcpm_upload_callback( $args ) {
 	}
 
 	$size = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
-	$html = '<input type="text" class="' . $size . '-text" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( stripslashes( $value ) ) . '"/>';
+	$html = '<input type="text" class="' . $size . '-text" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( stripslashes( $value ) ) . '"/>';
 	$html .= '<span>&nbsp;<input type="button" class="rcpm_settings_upload_button button-secondary" value="' . __( 'Upload File', 'recipe-manager' ) . '"/></span>';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -893,8 +893,8 @@ function rcpm_color_callback( $args ) {
 	$default = isset( $args['std'] ) ? $args['std'] : '';
 
 	$size = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
-	$html = '<input type="text" class="rcpm-color-picker" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( $value ) . '" data-default-color="' . esc_attr( $default ) . '" />';
-	$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+	$html = '<input type="text" class="rcpm-color-picker" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( $value ) . '" data-default-color="' . esc_attr( $default ) . '" />';
+	$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 	echo $html;
 }
@@ -935,12 +935,12 @@ if ( ! function_exists( 'rcpm_license_key_callback' ) ) {
 		}
 
 		$size = ( isset( $args['size'] ) && ! is_null( $args['size'] ) ) ? $args['size'] : 'regular';
-		$html = '<input type="text" class="' . $size . '-text" id="rcpm_settings[' . $args['id'] . ']" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( $value ) . '"/>';
+		$html = '<input type="text" class="' . $size . '-text" id="rcpm_settings_' . $args['id'] . '" name="rcpm_settings[' . $args['id'] . ']" value="' . esc_attr( $value ) . '"/>';
 
 		if ( 'valid' == get_option( $args['options']['is_valid_license_option'] ) ) {
 			$html .= '<input type="submit" class="button-secondary" name="' . $args['id'] . '_deactivate" value="' . __( 'Deactivate License', 'recipe-manager' ) . '"/>';
 		}
-		$html .= '<label class="field-description" for="rcpm_settings[' . $args['id'] . ']"> ' . $args['desc'] . '</label>';
+		$html .= '<label class="field-description" for="rcpm_settings_' . $args['id'] . '"> ' . $args['desc'] . '</label>';
 
 		wp_nonce_field( $args['id'] . '-nonce', $args['id'] . '-nonce' );
 
