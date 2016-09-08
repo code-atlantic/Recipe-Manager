@@ -13,6 +13,7 @@ class Pages {
 
 	public static function init() {
 		add_action( 'admin_menu', array( __CLASS__, 'register_pages' ), 999 );
+		add_action( 'admin_init', array( __CLASS__, 'admin_redirect' ) );
 	}
 
 	public static function register_pages() {
@@ -259,6 +260,15 @@ class Pages {
 		</div>
 		</div><?php
 		echo ob_get_clean();
+	}
+
+	public static function admin_redirect() {
+		$redirect = get_option( 'rcpm_activation_redirect', false );
+		if ( $redirect ) {
+			delete_option( 'rcpm_activation_redirect' );
+			wp_redirect( $redirect );
+			exit;
+		}
 	}
 
 }
