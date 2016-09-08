@@ -2,11 +2,13 @@
    Single Recipe
    ========================================================================== */
 
-.single-recipe {
+.single-recipe, .recipe-shortcode.full-recipe {
 
   .recipe-wrapper {
 
     .entry-summary {
+      color: inherit;
+
       h1, h2, h3 {
         margin-top:.5em;
         margin-bottom:.7em;
@@ -37,6 +39,24 @@
     .recipe-meta {
       @include section-bottom();
       padding: 0 0 $base_spacing;
+
+      columns: 2;
+    }
+
+    .recipe-times {
+      @include section-bottom();
+      padding: 0 0 $base_spacing;
+      display: block;
+      line-height: 1.25;
+
+      columns: 3;
+      list-style: none;
+
+      li {
+        strong {
+          display: block;
+        }
+      }
     }
 
     .recipe-description {
