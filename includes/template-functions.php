@@ -120,6 +120,10 @@ function rcpm_generator_tag( $gen, $type ) {
 function rcpm_body_class( $classes ) {
 	$classes = (array) $classes;
 
+	if ( is_singular( 'recipe' ) ) {
+		$classes[] = 'rcpm-page';
+	}
+
 	return array_unique( $classes );
 }
 
@@ -257,7 +261,7 @@ if ( ! function_exists( 'rcpm_content' ) ) {
 
 				<?php rcpm_recipe_loop_start(); ?>
 
-				<?php rcpm_recipe_subcategories(); ?>
+				<?php //rcpm_recipe_subcategories(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -269,57 +273,52 @@ if ( ! function_exists( 'rcpm_content' ) ) {
 
 				<?php do_action( 'rcpm_after_recipe_loop' ); ?>
 
-			<?php elseif ( ! rcpm_recipe_subcategories( array(
-				'before' => rcpm_recipe_loop_start( false ),
-				'after'  => rcpm_recipe_loop_end( false ),
-			) )
-			) : ?>
+			<?php else : ?>
 
 				<?php rcpm_get_template( 'loop/no-recipes-found.php' ); ?>
 
 			<?php endif;
 
 		}
-		/** Global ****************************************************************/
-
-		if ( ! function_exists( 'rcpm_output_content_wrapper' ) ) {
-
-			/**
-			 * Output the start of the page wrapper.
-			 *
-			 */
-			function rcpm_output_content_wrapper() {
-				rcpm_get_template( 'global/wrapper-start.php' );
-			}
-		}
-		if ( ! function_exists( 'rcpm_output_content_wrapper_end' ) ) {
-
-			/**
-			 * Output the end of the page wrapper.
-			 *
-			 */
-			function rcpm_output_content_wrapper_end() {
-				rcpm_get_template( 'global/wrapper-end.php' );
-			}
-		}
-
-		if ( ! function_exists( 'rcpm_get_sidebar' ) ) {
-
-			/**
-			 * Get the recipes sidebar template.
-			 *
-			 */
-			function rcpm_get_sidebar() {
-				rcpm_get_template( 'global/sidebar.php' );
-			}
-		}
-
 	}
 }
 
+/** Global ****************************************************************/
+
+if ( ! function_exists( 'rcpm_output_content_wrapper' ) ) {
+
+	/**
+	 * Output the start of the page wrapper.
+	 *
+	 */
+	function rcpm_output_content_wrapper() {
+		rcpm_get_template( 'global/wrapper-start.php' );
+	}
+}
+
+if ( ! function_exists( 'rcpm_output_content_wrapper_end' ) ) {
+
+	/**
+	 * Output the end of the page wrapper.
+	 *
+	 */
+	function rcpm_output_content_wrapper_end() {
+		rcpm_get_template( 'global/wrapper-end.php' );
+	}
+}
+
+if ( ! function_exists( 'rcpm_get_sidebar' ) ) {
+
+	/**
+	 * Get the recipes sidebar template.
+	 *
+	 */
+	function rcpm_get_sidebar() {
+		rcpm_get_template( 'global/sidebar.php' );
+	}
+}
 
 /** Loop ******************************************************************/
-
 if ( ! function_exists( 'rcpm_page_title' ) ) {
 
 	/**
@@ -380,6 +379,7 @@ if ( ! function_exists( 'rcpm_recipe_loop_start' ) ) {
 		}
 	}
 }
+
 if ( ! function_exists( 'rcpm_recipe_loop_end' ) ) {
 
 	/**
@@ -401,6 +401,7 @@ if ( ! function_exists( 'rcpm_recipe_loop_end' ) ) {
 		}
 	}
 }
+
 if ( ! function_exists( 'rcpm_template_loop_recipe_title' ) ) {
 
 	/**
@@ -410,6 +411,7 @@ if ( ! function_exists( 'rcpm_template_loop_recipe_title' ) ) {
 		rcpm_get_template( 'loop/title.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_taxonomy_archive_description' ) ) {
 
 	/**
@@ -426,6 +428,7 @@ if ( ! function_exists( 'rcpm_taxonomy_archive_description' ) ) {
 		}
 	}
 }
+
 if ( ! function_exists( 'rcpm_recipe_archive_description' ) ) {
 
 	/**
@@ -472,7 +475,6 @@ if ( ! function_exists( 'rcpm_template_loop_recipe_time' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'rcpm_template_loop_recipe_allergens' ) ) {
 
 	/**
@@ -484,7 +486,6 @@ if ( ! function_exists( 'rcpm_template_loop_recipe_allergens' ) ) {
 		rcpm_get_template( 'loop/allergen-warnings.php' );
 	}
 }
-
 
 if ( ! function_exists( 'rcpm_template_loop_recipe_meta' ) ) {
 
@@ -559,7 +560,6 @@ if ( ! function_exists( 'rcpm_pagination' ) ) {
 }
 
 /** Single Product ********************************************************/
-
 if ( ! function_exists( 'rcpm_show_recipe_images' ) ) {
 
 	/**
@@ -583,6 +583,7 @@ if ( ! function_exists( 'rcpm_template_single_title' ) ) {
 		rcpm_get_template( 'single-recipe/title.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_template_single_description' ) ) {
 
 	/**
@@ -594,6 +595,7 @@ if ( ! function_exists( 'rcpm_template_single_description' ) ) {
 		rcpm_get_template( 'single-recipe/description.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_template_single_excerpt' ) ) {
 
 	/**
@@ -605,6 +607,7 @@ if ( ! function_exists( 'rcpm_template_single_excerpt' ) ) {
 		rcpm_get_template( 'single-recipe/short-description.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_template_single_actions_bar' ) ) {
 
 	/**
@@ -616,6 +619,7 @@ if ( ! function_exists( 'rcpm_template_single_actions_bar' ) ) {
 		rcpm_get_template( 'single-recipe/action-bar.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_template_single_meta' ) ) {
 
 	/**
@@ -627,6 +631,7 @@ if ( ! function_exists( 'rcpm_template_single_meta' ) ) {
 		rcpm_get_template( 'single-recipe/meta.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_template_single_sharing' ) ) {
 
 	/**
@@ -675,7 +680,6 @@ if ( ! function_exists( 'rcpm_template_single_recipe_phases' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'rcpm_breadcrumb' ) ) {
 
 	/**
@@ -704,7 +708,6 @@ if ( ! function_exists( 'rcpm_breadcrumb' ) ) {
 }
 
 /** Forms ****************************************************************/
-
 if ( ! function_exists( 'get_recipe_search_form' ) ) {
 
 	/**
@@ -739,10 +742,7 @@ if ( ! function_exists( 'get_recipe_search_form' ) ) {
 	}
 }
 
-
 /** Global ****************************************************************/
-
-
 if ( ! function_exists( 'rcpm_output_content_wrapper' ) ) {
 
 	/**
@@ -753,6 +753,7 @@ if ( ! function_exists( 'rcpm_output_content_wrapper' ) ) {
 		rcpm_get_template( 'global/wrapper-start.php' );
 	}
 }
+
 if ( ! function_exists( 'rcpm_output_content_wrapper_end' ) ) {
 
 	/**
@@ -823,7 +824,6 @@ if ( ! function_exists( 'rcpm_template_single_meta_post_tags' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'rcpm_template_single_allergen_warnings' ) ) {
 
 	/**
@@ -835,7 +835,6 @@ if ( ! function_exists( 'rcpm_template_single_allergen_warnings' ) ) {
 		rcpm_get_template( 'single-recipe/allergen-warnings.php' );
 	}
 }
-
 
 if ( ! function_exists( 'rcpm_template_single_additional_notes' ) ) {
 
@@ -860,7 +859,6 @@ if ( ! function_exists( 'rcpm_placeholder_img_src' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'rcpm_placeholder_img' ) ) {
 	/**
 	 * Output the recipe additional notes.
@@ -872,14 +870,13 @@ if ( ! function_exists( 'rcpm_placeholder_img' ) ) {
 	}
 }
 
-
 function rcpm_recipe_labels( $key ) {
 
 	$labels = apply_filters( 'rcpm_recipe_labels', array(
 		'prep'             => __( 'Prep', 'recipe-manager' ),
 		'cook'             => __( 'Cook', 'recipe-manager' ),
 		'total'            => __( 'Total', 'recipe-manager' ),
-		'servings'         => __( 'Servings', 'recipe-manager' ),
+		'servings'         => __( 'Serves', 'recipe-manager' ),
 		'ingredients'      => __( 'Ingredients', 'recipe-manager' ),
 		'steps'            => __( 'Instructions', 'recipe-manager' ),
 		'additional_notes' => __( 'Notes', 'recipe-manager' ),
@@ -894,7 +891,6 @@ function rcpm_recipe_labels( $key ) {
 
 	return apply_filters( "rcpm_recipe_{$key}_label", $labels[ $key ] );
 }
-
 
 /**
  * Display recipe phases with ingredients & steps.
