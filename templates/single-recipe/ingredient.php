@@ -27,11 +27,7 @@ global $post, $recipe;
 
 	<?php if ( $ingredient['note'] != '' ) : ?>
 
-		<span <?php rcpm_attr( 'recipe-ingredient-note' ); ?>>
-
-			<?php esc_html_e( $ingredient['note'] ); ?>
-
-		</span>
+		<span <?php rcpm_attr( 'recipe-ingredient-note' ); ?>><?php esc_html_e( $ingredient['note'] ); ?></span>
 
 	<?php endif; ?>
 

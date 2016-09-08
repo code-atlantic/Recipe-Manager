@@ -21,7 +21,7 @@ $allergens = $recipe->get_allergens();
 
 foreach ( $allergens as $ingredient ) : ?>
 
-	<p <?php rcpm_attr( 'recipe-allergy-warning' ); ?>>
+	<div <?php rcpm_attr( 'recipe-allergy-warning' ); ?>>
 
 		<?php
 			$message = $ingredient->get_allergy_warning() != '' ? $ingredient->get_allergy_warning() : sprintf( __( 'Contains %1s which may cause allergic reactions.', 'recipe-manager' ), $ingredient->post_title );
@@ -32,6 +32,6 @@ foreach ( $allergens as $ingredient ) : ?>
 			);
 		?>
 
-	</p>
+	</div>
 
 <?php endforeach; ?>

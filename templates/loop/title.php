@@ -13,5 +13,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <h3 <?php rcpm_attr( 'recipe-title' ); ?>>
-	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	<?php if ( rcpm_get_option( 'disable_public_recipes', false ) ) : ?>
+		<?php the_title(); ?>
+	<?php else : ?>
+		<a href="<?php the_permalink(); ?>">
+			<?php the_title(); ?>
+		</a>
+	<?php endif; ?>
 </h3><?php
