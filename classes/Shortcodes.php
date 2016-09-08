@@ -37,7 +37,7 @@ class Shortcodes {
 		);
 
 		if ( isset( $atts['id'] ) ) {
-			if ( is_integer( $atts['id'] ) ) {
+			if ( is_numeric( $atts['id'] ) ) {
 				$args['p'] = $atts['id'];
 			} else {
 				$args['name'] = $atts['id'];
