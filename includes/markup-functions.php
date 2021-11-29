@@ -136,7 +136,7 @@ function rcpm_attr( $context, $attributes = array(), $echo = true ) {
 
 			case 'data':
 				if ( ! is_array( $value ) ) {
-					continue;
+					continue 2;
 				}
 				foreach ( $value as $name => $data ) {
 					$output .= sprintf( 'data-%s="%s" ', esc_html( $name ), esc_attr( $data ) );
